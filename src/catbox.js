@@ -3,7 +3,6 @@ import Octocats from './cats.json'
 class Catbox extends Component {
   render() {
     let cats = Octocats
-    console.log(cats)
     return (
       <section id="cat-block">
         {cats.map(cat => (
@@ -18,7 +17,7 @@ class Catbox extends Component {
                 the <span class="caption-title">{cat.name}</span> by
               </p>
               {cat.authors.map(author => (
-                <img src={author.image} alt="creator image" />
+                <img src={author.image} alt="creator" />
               ))}
             </div>
           </div>
